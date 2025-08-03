@@ -1,0 +1,36 @@
+{
+  "pluginAlias": "MyESmartPlatform",
+  "pluginType": "platform",
+  "schema": {
+    "type": "object",
+    "properties": {
+      "name": {
+        "type": "string",
+        "required": true
+      },
+      "jid": {
+        "type": "string",
+        "required": true
+      },
+      "password": {
+        "type": "string",
+        "required": true
+      },
+      "room": {
+        "type": "string",
+        "required": true
+      },
+      "mqtt": {
+        "type": "object",
+        "properties": {
+          "host": {
+            "type": "string"
+          },
+          "id": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

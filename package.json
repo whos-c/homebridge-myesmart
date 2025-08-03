@@ -1,0 +1,23 @@
+{
+  "name": "homebridge-myesmart",
+  "version": "0.1.0",
+  "description": "Homebridge plugin for eSMART devices using XMPP",
+  "main": "index.js",
+  "keywords": [
+    "homebridge-plugin"
+  ],
+  "engines": {
+    "node": ">=14",
+    "homebridge": ">=1.0.0"
+  },
+  "peerDependencies": {
+    "homebridge": ">=1.0.0"
+  },
+  "dependencies": {
+    "@xmpp/client": "^0.13.1",
+    "mqtt": "^5.0.0"
+  },
+  "scripts": {
+    "test": "echo 'no tests'"
+  }
+}
