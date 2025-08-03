@@ -3,11 +3,11 @@ const mqtt = require('mqtt');
 
 let Service, Characteristic, UUIDGen;
 
-module.exports = (homebridge) => {
-  Service = homebridge.hap.Service;
-  Characteristic = homebridge.hap.Characteristic;
-  UUIDGen = homebridge.hap.uuid;
-  homebridge.registerPlatform('homebridge-myesmart', 'MyESmartPlatform', MyESmartPlatform);
+module.exports = (api) => {
+  Service = api.hap.Service;
+  Characteristic = api.hap.Characteristic;
+  UUIDGen = api.hap.uuid;
+  api.registerPlatform('MyESmartPlatform', MyESmartPlatform);
 };
 
 class MyESmartPlatform {
